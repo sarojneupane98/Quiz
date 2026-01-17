@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Quiz for Kids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fun computer quiz for kids">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Start Screen ===== -->
+<div class="start-screen" id="startScreen">
+    <h1>🧠 Computer Quiz</h1>
+    <p>Select a level to start</p>
+
+    <div class="level-buttons">
+        <button class="level-btn" data-level="easy">Easy</button>
+        <button class="level-btn" data-level="medium">Medium</button>
+        <button class="level-btn" data-level="hard">Hard</button>
+    </div>
+</div>
+
+<!-- ===== Quiz Screen ===== -->
+<div class="quiz-container hidden" id="quizScreen">
+    <h1>🧠 Computer Quiz</h1>
+    <p class="subtitle">Choose the correct answer</p>
+
+    <div class="question-box">
+        <h2 id="question"></h2>
+        <div class="options"></div>
+    </div>
+
+    <div class="quiz-footer">
+        <span id="progress"></span>
+        <span id="score">Score: 0</span>
+        <span id="timer">⏱️ 10s</span>
+        <button id="next-btn" class="hidden">Next</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

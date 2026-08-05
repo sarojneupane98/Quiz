@@ -3,18 +3,28 @@
     "question": "Computers in ICU are used for monitoring patients.",
     "options": ["True", "False"],
     "answer": 0,
-    "fact": "Hospitals use specialized computers for real-time patient health tracking."
+    "fact": "Hospitals use specialized computers for real-time patient health tracking.",
+    "level": "easy"
   },
   {
     "question": "Which component is known as the brain of the computer?",
     "options": ["Hard Drive", "CPU", "RAM", "GPU"],
     "answer": 1,
-    "fact": "The CPU (Central Processing Unit) performs most calculation operations."
+    "fact": "The CPU (Central Processing Unit) performs most calculation operations.",
+    "level": "easy"
   },
   {
     "question": "RAM loses its stored information when the power is turned off.",
     "options": ["True", "False"],
     "answer": 0,
-    "fact": "RAM is volatile memory, meaning data clears when powered down."
+    "fact": "RAM is volatile memory, meaning data clears when powered down.",
+    "level": "medium"
+  },
+  {
+    "question": "Which protocol is primarily used for secure web browsing?",
+    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+    "answer": 1,
+    "fact": "HTTPS encrypts communications between your browser and the website.",
+    "level": "hard"
   }
 ]

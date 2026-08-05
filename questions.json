@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Computers in ICU are used for monitoring patients.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "fact": "Hospitals use specialized computers for real-time patient health tracking."
+  },
+  {
+    "question": "Which component is known as the brain of the computer?",
+    "options": ["Hard Drive", "CPU", "RAM", "GPU"],
+    "answer": 1,
+    "fact": "The CPU (Central Processing Unit) performs most calculation operations."
+  },
+  {
+    "question": "RAM loses its stored information when the power is turned off.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "fact": "RAM is volatile memory, meaning data clears when powered down."
+  }
+]

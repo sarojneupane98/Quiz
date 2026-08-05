@@ -154,3 +154,55 @@ h1 {
     color: white;
     cursor: pointer;
 }
+/* Progress Bar Track */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #4caf50, #ff9800, #f44336);
+  transition: width 1s linear;
+}
+
+/* Card Fade Animation */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Answer Option Button States */
+.option-btn {
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn.correct {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.option-btn.wrong {
+  background-color: #f44336 !important;
+  color: white !important;
+}

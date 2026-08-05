@@ -9,58 +9,42 @@
 </head>
 <body>
 
-<!-- ===== Start Screen ===== -->
-<div class="start-screen" id="startScreen">
-    <h1>🧠 Computer Quiz</h1>
-    <p>Select a level to start</p>
+    <!-- Start Screen -->
+    <div class="start-screen" id="startScreen">
+        <h1>🧠 Computer Quiz</h1>
+        <p>Select a level to start</p>
 
-    <div class="level-buttons">
-        <button class="level-btn" data-level="easy">Easy</button>
-        <button class="level-btn" data-level="medium">Medium</button>
-        <button class="level-btn" data-level="hard">Hard</button>
-    </div>
-</div>
-
-<!-- ===== Quiz Screen ===== -->
-<div class="quiz-container hidden" id="quizScreen">
-    <h1>🧠 Computer Quiz</h1>
-    <p class="subtitle">Choose the correct answer</p>
-
-    <div class="question-box">
-        <h2 id="question"></h2>
-        <div class="options"></div>
+        <div class="level-buttons">
+            <button class="level-btn" data-level="easy">Easy</button>
+            <button class="level-btn" data-level="medium">Medium</button>
+            <button class="level-btn" data-level="hard">Hard</button>
+        </div>
     </div>
 
-    <div class="quiz-footer">
-        <span id="progress"></span>
-        <span id="score">Score: 0</span>
-        <span id="timer">⏱️ 10s</span>
-        <button id="next-btn" class="hidden">Next</button>
+    <!-- Quiz Card Screen -->
+    <div id="quiz-card" class="card hidden">
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        
+        <div class="header">
+            🧠 <h2>Computer Quiz</h2>
+        </div>
+
+        <h3 id="question-title">Loading...</h3>
+        
+        <div id="options" class="options-grid"></div>
+
+        <div id="fact-box" class="fact-box" style="display: none;"></div>
+
+        <div class="footer">
+            <span id="question-number">Question 1 / 10</span>
+            <span id="score-display">Score: 0</span>
+            <span id="timer-text">⏱️ 15s</span>
+            <button id="next-btn" class="next-btn">Next</button>
+        </div>
     </div>
-</div>
-    <div id="quiz-card" class="card">
-  <div class="progress-container">
-    <div id="progress-bar" class="progress-bar"></div>
-  </div>
-  
-  <div class="header">
-    🧠 <h2>Computer Quiz</h2>
-  </div>
 
-  <h3 id="question-title">Loading...</h3>
-  
-  <div id="options" class="options-grid"></div>
-
-  <div id="fact-box" class="fact-box" style="display: none;"></div>
-
-  <div class="footer">
-    <span id="question-number">Question 1 / 10</span>
-    <span id="score-display">Score: 0</span>
-    <span id="timer-text">⏱️ 15s</span>
-    <button id="next-btn" class="next-btn">Next</button>
-  </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
